@@ -1,0 +1,12 @@
+OASISFormat: 0.3
+Name:        ocaml-noaa
+Version:     0.1
+Synopsis:    NOAA API & Command Line tool
+Authors:     Miguel A. Yanez
+License:     MIT
+
+Executable noaa
+  Path:       .
+  BuildTools: ocamlbuild
+  MainIs:     main.ml
+  
