@@ -4,9 +4,13 @@ Version:     0.1
 Synopsis:    NOAA API & Command Line tool
 Authors:     Miguel A. Yanez
 License:     MIT
+Plugins:     META (0.3)
+BuildTools:   ocamlbuild
+BuildDepends: core, cohttp.lwt, threads, cow
 
 Executable noaa
   Path:       .
-  BuildTools: ocamlbuild
+  CompiledObject:     best
+  Install:            false
   MainIs:     main.ml
   
