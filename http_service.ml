@@ -1,6 +1,6 @@
 open Core.Std
 open Lwt
-open Cow
+open Xml
 
 type service = 
 	{
@@ -41,4 +41,4 @@ let generate_parameter_request_str http_service =
 
 let make_request http_service = Lwt.(Cohttp_lwt_unix.(Lwt_unix.run (Client.get Uri.(of_string (http_service.base_url^(generate_parameter_request_str http_service))) >>= function None -> assert false |Some (r,b) -> Cohttp_lwt_body.string_of_body b)));;
 
-let parse_to_xml request = Cow.Xml.of_string request;;
+let parse_to_xml request = Xml.parse_string request;;
