@@ -6,7 +6,7 @@ Authors:     Miguel A. Yanez
 License:     MIT
 Plugins:     META (0.3)
 BuildTools:   ocamlbuild
-BuildDepends: core, cohttp.lwt, threads, xml-light
+BuildDepends: core, cohttp.lwt, threads, ezxmlm, cow
 
 Executable noaa
   Path:       .
