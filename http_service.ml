@@ -1,7 +1,6 @@
 open Core.Std
 open Lwt
 open Ezxmlm
-open Cow
 
 type service = 
 	{
